@@ -1,10 +1,28 @@
+a{
+  color:#56A4F0;
+}
+
 .App {
   text-align: center;
+  background:#112B44;
+  padding:50px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  height:100vh;
+  box-sizing: border-box;
+  background: rgb(17,43,68);
+  background: linear-gradient(129deg, rgba(17,43,68,1) 0%, rgba(54,110,163,1) 100%); 
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 30vmin;
   pointer-events: none;
+  opacity:0.05;
+}
+
+.App-logo:hover{
+  opacity:0.2;
+  height:15vmin;
+
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -27,6 +45,108 @@
 .App-link {
   color: #61dafb;
 }
+
+/* SIDEPANEL STYLES */
+.sidepanel{
+  background:#215588;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  padding:20px;
+  width:25%;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size:1.5em;
+}
+
+.sidepanel > a{
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom:10px;
+  color:#56A4F0;
+  display:block;
+  text-decoration: none;
+  border-bottom:dashed;
+  border-width:1px;
+  transition:0.2s;
+}
+
+.visitorspanel{
+  background:#3a94ee4f;
+  width:97%;
+  margin:0 auto;
+  height:300px;
+  box-sizing: border-box;
+  padding:15px;
+}
+
+.visitorspanel:hover{
+
+}
+
+.sidepanel > a:hover{
+  color:#8EC2F5;
+  margin-right:15px;
+  border-bottom: solid 1px #E2EDF8;
+}
+
+.AppContainer{
+  width:800px;
+  margin:0 auto;
+  display:flex;
+  flex-direction: row;
+  background:#194066;
+  padding:20px;
+}
+
+.mainpanel{
+  display:block;
+  width:90%;
+  color:#A7C9E9;
+}
+
+.minipanelrow{
+  display:flex;
+  justify-content: space-between;
+  width:500;
+  align-items: stretch;
+  padding:10px;
+  padding-top:0px;
+}
+
+.minipanel{
+  background:#2b6daf7c;
+  width:32%;
+  height:300px;
+  text-align:center;
+  padding:10px;
+  box-sizing: border-box;
+}
+
+h1{
+  font-size: 5em;
+  opacity:0.4;
+  color:rgb(84, 197, 84);
+}
+
+.minipanel > a{
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom:10px;
+  display:block;
+  text-decoration: none;
+  border-bottom:dotted;
+  border-width:1px;
+  transition:0.2s;
+  font-size:1.3em;
+  width:90%;
+}
+
+.buysentiment{
+  color:rgb(77, 168, 77);
+}
+
+
+
 
 @keyframes App-logo-spin {
   from {

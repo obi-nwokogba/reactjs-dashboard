@@ -1,23 +1,22 @@
 import logo from './logo.svg';
+import SidePanel from './SidePanel.js';
+import MiniPanelRow from './MiniPanelRow.js';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="AppContainer">
+        <SidePanel />
+        <div className="mainpanel">
+
+        <MiniPanelRow />
+          <div className="visitorspanel">
+            <h2>Website Visitors</h2>
+          </div>
+        
+        </div>
+      </div>
     </div>
   );
 }
